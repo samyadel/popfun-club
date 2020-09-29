@@ -1,0 +1,350 @@
+/***************GENERAL***************/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f2f2f8;
+  color: #434242;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+}
+
+li {
+  padding: 0 1.25rem;
+}
+
+p,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #434242;
+  border-radius: 5px;
+  color: #434242;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s, background 0.3s;
+}
+
+section {
+  margin: 6.25rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid rgba(67, 66, 66, 0.14);
+  height: 0;
+  width: 97%;
+}
+
+button:hover {
+  border-color: #ff6600;
+  color: #ff6600;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+}
+
+/***************SITE HEADER***************/
+
+.site-header {
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 1px 6px rgb(49, 49, 49);
+  display: flex;
+  height: 4.0625rem;
+  justify-content: space-between;
+  padding-left: 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  display: inline;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+nav {
+  margin-right: 25px;
+}
+
+.site-header li {
+  font-weight: 300;
+  display: inline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/***************MAIN BANNER***************/
+
+.banner {
+  align-items: center;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  height: 50rem;
+  justify-content: center;
+  margin-top: 4.0625rem;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  background: #000;
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+}
+
+.banner h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.banner p {
+  margin: 1.5625rem 0;
+}
+
+.banner button {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  height: 2.6875rem;
+  width: 7.5rem;
+}
+
+.banner button:hover {
+  background: #fff;
+  color: black;
+}
+
+/***************ABOUT***************/
+
+.about .card {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: auto;
+  width: 61.25rem;
+}
+
+.about img {
+  border-radius: 10px 0 0 10px;
+  width: 25rem;
+}
+
+.about h2 {
+  margin: 2.5rem 0;
+  text-align: left;
+}
+
+.about p {
+  line-height: 1.3;
+  margin-bottom: 1.25rem;
+  width: 32.7031rem;
+}
+
+/***************EVENTS***************/
+
+.events {
+  text-align: center;
+}
+
+.events h2 {
+  margin: 2.5rem 0 4.0625rem;
+}
+
+.events .card {
+  cursor: pointer;
+  display: inline-block;
+  height: 25rem;
+  margin: 0 1.25rem;
+}
+
+.events img {
+  border-radius: 10px 10px 0 0;
+  width: 18.75rem;
+}
+
+.events h3 {
+  cursor: text;
+  font-size: 0.9375rem;
+  margin-top: 0.625rem;
+}
+
+.info {
+  cursor: text;
+  list-style-type: disc;
+  margin-top: 1.25rem;
+  padding-left: 3.125rem;
+}
+
+.info li {
+  display: block;
+  margin: 0.625rem 0;
+  padding: 0;
+  text-align: left;
+}
+
+.events button {
+  height: 2.1875rem;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  width: 4.375rem;
+}
+
+/***************CONTACT***************/
+
+.contact {
+  align-items: center;
+  display: flex;
+  height: 18.4375rem;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.contact div > ul > li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.contact li {
+  display: block;
+  margin: 0.9375rem 0;
+}
+
+li.social-button {
+  display: inline-block;
+}
+
+li button {
+  height: 3.125rem;
+  width: 3.125rem;
+}
+
+.fab {
+  font-size: 1.25rem;
+}
+
+/***************FOOTER***************/
+
+footer {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  height: 9.375rem;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+small {
+  opacity: 0.6;
+}
+
+/***************MEDIA QUERIES***************/
+
+@media only screen and (max-width: 1027px) {
+  .events .card {
+    margin-bottom: 40px;
+  }
+
+  .events .card:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 997px) {
+  .about {
+    text-align: center;
+  }
+
+  .about .card {
+    display: inline-block;
+    max-height: 451.2px;
+    padding: 0 2%;
+    text-align: left;
+    width: 70%;
+  }
+
+  .about img {
+    display: none;
+  }
+
+  .about p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  .contact {
+    display: block;
+  }
+
+  .contact h2 {
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .contact div {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact div > ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .social-button {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 683px) {
+  .site-header {
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .site-header .logo {
+    display: none;
+  }
+
+  nav {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .banner h1 {
+    font-size: 3.3rem;
+  }
+}
