@@ -149,14 +149,18 @@ a {
 
 .about .card {
   display: flex;
+  height: 400.438px;
   justify-content: space-between;
   margin: 0 auto;
+  max-height: 560px;
   overflow: auto;
   width: 61.25rem;
 }
 
 .about img {
   border-radius: 10px 0 0 10px;
+  height: auto;
+  max-height: 400.438px;
   width: 25rem;
 }
 
@@ -287,7 +291,6 @@ small {
 
   .about .card {
     display: inline-block;
-    max-height: 451.2px;
     padding: 0 2%;
     text-align: left;
     width: 70%;
@@ -346,5 +349,11 @@ small {
 @media only screen and (max-width: 490px) {
   .banner h1 {
     font-size: 3.3rem;
+  }
+}
+
+@media only screen and (max-width: 382px) {
+  .banner h1 {
+    font-size: 3rem;
   }
 }
